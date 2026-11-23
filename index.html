@@ -1,0 +1,527 @@
+<!doctype html>
+<html lang="en" data-theme="day">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dustin Clarence Costo · Aspiring QA Tester</title>
+    <meta name="description" content="Portfolio of Dustin Clarence Costo, BS Information Technology student at STI College Legazpi (expected graduation 2027) preparing for an entry-level QA Tester role: projects, skills, experience and contact." />
+    <meta name="author" content="Dustin Clarence Costo" />
+    <meta name="theme-color" content="#F3EEE4" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Dustin Clarence Costo · Aspiring QA Tester" />
+    <meta property="og:description" content="Projects, skills and experience of an aspiring QA Tester from Legazpi City, Philippines." />
+    <link rel="canonical" href="https://dustinclarence.github.io/portfolio/" />
+    <meta property="og:url" content="https://dustinclarence.github.io/portfolio/" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Shippori+Mincho:wght@500;700;800&display=swap" rel="stylesheet" />
+    <script>
+      (function () {
+        try {
+          var t = localStorage.getItem('theme');
+          if (t !== 'day' && t !== 'night') t = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'night' : 'day';
+          document.documentElement.dataset.theme = t;
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <nav class="nav container" aria-label="Primary">
+        <a class="brand" href="#home">
+          <span class="seal seal--sm" aria-hidden="true">DC</span>
+          <span class="brand__name">Dustin Clarence Costo</span>
+        </a>
+        <ul class="nav__links" id="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#achievements">Achievements</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="nav__tools">
+          <button class="theme-toggle" type="button" aria-pressed="false">
+            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8"/></svg>
+            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5z"/></svg>
+            <span class="visually-hidden">Night theme</span>
+          </button>
+          <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-links">
+            <span class="nav__toggle-bar" aria-hidden="true"></span>
+            <span class="visually-hidden">Menu</span>
+          </button>
+        </div>
+      </nav>
+      <div class="progress" aria-hidden="true"><span></span></div>
+    </header>
+
+    <main id="main">
+      <!-- ================= HOME ================= -->
+      <section class="home" id="home" aria-labelledby="hero-title">
+      <div class="hero">
+        <div class="hero__art" aria-hidden="true">
+          <svg class="mayon" viewBox="0 0 1440 560" preserveAspectRatio="xMidYMax slice" focusable="false">
+            <defs>
+              <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" class="sky-a" />
+                <stop offset=".75" class="sky-b" />
+              </linearGradient>
+              <linearGradient id="cone" x1="0" y1="0" x2="1" y2="0">
+                <stop offset="0" class="cone-a" />
+                <stop offset=".56" class="cone-b" />
+                <stop offset="1" class="cone-c" />
+              </linearGradient>
+              <pattern id="tone" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(30)">
+                <circle cx="4" cy="4" r="1.15" class="tone-dot" />
+              </pattern>
+            </defs>
+                        <circle class="sun" cx="1235" cy="235" r="66" />
+            <g class="streaks">
+              <path d="M1250 300 h150 M1290 322 h110" />
+            </g>
+            <path class="ridge-far" d="M0 452 C 160 410 300 430 430 418 S 650 392 760 402 S 1010 428 1170 412 S 1360 398 1440 406 V560 H0Z" />
+            <path class="cone" d="M470 500 C 620 452 752 322 846 210 Q 872 186 898 210 C 992 322 1124 452 1274 500 Z" fill="url(#cone)" />
+            <path class="cone-tone" d="M872 196 Q 886 200 898 210 C 992 322 1124 452 1274 500 L 1040 500 C 980 400 924 300 872 196Z" fill="url(#tone)" />
+            <path class="gullies" d="M866 206 C 852 280 830 352 796 440 M878 206 C 890 290 912 372 952 470 M872 210 C 872 300 874 380 880 480" />
+            <path class="plume" d="M874 190 C 896 162 872 138 906 116 C 938 96 924 70 960 56 C 990 44 990 26 1020 18" />
+            <path class="ridge-near" d="M0 500 C 180 470 320 488 480 480 S 820 504 1000 494 S 1300 476 1440 490 V560 H0Z" />
+          </svg>
+        </div>
+
+        <div class="hero__inner container">
+          <div class="hero__copy">
+            <p class="kicker enter"><span class="kicker__tag">EP. 01</span> Portfolio · Legazpi City</p>
+            <h1 class="hero__title enter" id="hero-title">
+              <span class="hero__first">Dustin Clarence</span>
+              <span class="hero__last">Costo</span>
+            </h1>
+            <p class="hero__role enter">Aspiring <strong>QA Tester</strong> · BS Information Technology · STI College Legazpi</p>
+            <p class="hero__intro enter">An IT student preparing for an entry-level software quality assurance role, with academic project experience in software development and testing.</p>
+            <div class="hero__actions enter">
+              <a class="btn btn--primary" href="#projects">View my projects <span aria-hidden="true">→</span></a>
+              <a class="btn btn--ghost" href="#contact">Contact me</a>
+            </div>
+          </div>
+
+          <figure class="hero__figure enter">
+            <div class="frame">
+              <img src="/img/dustin.webp" width="720" height="720" alt="Portrait of Dustin Clarence Costo in formal attire" fetchpriority="high" />
+              <span class="frame__tone" aria-hidden="true"></span>
+            </div>
+            <span class="vertical-label" lang="ja" aria-hidden="true">品質保証</span>
+            <span class="seal seal--lg" aria-hidden="true">DC</span>
+            <figcaption class="frame__caption">
+              <span class="frame__caption-jp" lang="ja">品質保証</span>
+              <span>Hinshitsu hoshō: “quality assurance”</span>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+
+        <div class="intro container">
+          <div class="intro__label reveal">
+            <p class="eyebrow">Introduction</p>
+            <p class="intro__jp" lang="ja" aria-hidden="true">はじめに</p>
+          </div>
+          <p class="intro__text reveal">Hello, I'm Dustin, a BS Information Technology student at STI College Legazpi, expecting to graduate in 2027. I am preparing for a career as a QA Tester. I like finding out why something does not work, and I pay attention to the small details that make software reliable. In our capstone, an eBook Library Management System for Genecom Institute of Science and Technology, I spent long days building features, testing them, and fixing errors with my team until we defended it in November 2026. Outside class, I study web development through The Odin Project, where I built and published my first websites. This portfolio shows my projects, skills, and experience. I am open to internship and entry-level QA opportunities where I can keep learning and contribute carefully.</p>
+        </div>
+      </section>
+
+      <!-- ================= ABOUT ================= -->
+      <section class="section" id="about" aria-labelledby="about-title">
+        <div class="container">
+          <header class="chapter reveal">
+            <span class="chapter__no" aria-hidden="true">02</span>
+            <div>
+              <p class="chapter__jp" lang="ja" aria-hidden="true">自己紹介</p>
+              <h2 class="chapter__title" id="about-title">About Me</h2>
+            </div>
+          </header>
+
+          <div class="about">
+            <article class="panel panel--wide reveal">
+              <h3 class="panel__title"><span class="panel__num" aria-hidden="true">01</span>Background</h3>
+              <p>I am a fourth-year BS Information Technology student at STI College Legazpi in Legazpi City, Albay, Philippines. My studies cover programming, databases, web development, and system development. Most of my practical learning has come from building and testing real school projects with a team.</p>
+            </article>
+            <article class="panel reveal">
+              <h3 class="panel__title"><span class="panel__num" aria-hidden="true">02</span>Interests in IT</h3>
+              <ul class="ticks">
+                <li>Software testing and debugging: finding what breaks and why</li>
+                <li>Front-end web development with HTML, CSS, and JavaScript</li>
+                <li>Self-study through The Odin Project</li>
+              </ul>
+            </article>
+            <article class="panel reveal">
+              <h3 class="panel__title"><span class="panel__num" aria-hidden="true">03</span>Career Goals</h3>
+              <p>My immediate goal is to work as a <strong>QA Tester</strong>, where I can practice careful, systematic testing on real products. My development studies help me understand how applications are built, which helps me test them better, and I will keep growing those skills over time.</p>
+            </article>
+            <article class="panel reveal">
+              <h3 class="panel__title"><span class="panel__num" aria-hidden="true">04</span>Strengths</h3>
+              <ul class="ticks">
+                <li>Attention to detail when checking features and records</li>
+                <li>Staying calm under pressure and focusing on the solution</li>
+                <li>Receptive to feedback and quick to apply it</li>
+                <li>Follow-through on assigned responsibilities</li>
+              </ul>
+            </article>
+            <blockquote class="quote reveal">
+              <p>Being professional does not mean that I have to know everything. It means that I should be willing to learn, ask questions, accept feedback, and take responsibility for my work.</p>
+              <footer>From my Euthenics 2 reflection journal</footer>
+            </blockquote>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= SKILLS ================= -->
+      <section class="section section--tone" id="skills" aria-labelledby="skills-title">
+        <div class="container">
+          <header class="chapter reveal">
+            <span class="chapter__no" aria-hidden="true">03</span>
+            <div>
+              <p class="chapter__jp" lang="ja" aria-hidden="true">技能</p>
+              <h2 class="chapter__title" id="skills-title">Skills &amp; Competencies</h2>
+            </div>
+          </header>
+
+          <div class="skills">
+            <div class="skill-group skill-group--lead reveal">
+              <h3>Testing &amp; Development</h3>
+              <ul class="chips"><li>Testing &amp; Debugging</li><li>System Development</li><li>Responsive Web Design</li><li>Front-end &amp; Back-end Development</li></ul>
+            </div>
+            <div class="skill-group reveal">
+              <h3>Web</h3>
+              <ul class="chips"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>PHP</li></ul>
+            </div>
+            <div class="skill-group reveal">
+              <h3>Programming</h3>
+              <ul class="chips"><li>Java</li><li>C#</li><li>Object-Oriented Programming</li></ul>
+            </div>
+            <div class="skill-group reveal">
+              <h3>Database</h3>
+              <ul class="chips"><li>MySQL</li><li>SQL</li><li>Database Management</li></ul>
+            </div>
+            <div class="skill-group reveal">
+              <h3>Tools</h3>
+              <ul class="chips"><li>Visual Studio Code</li><li>Git &amp; GitHub</li><li>Figma</li><li>Microsoft Office</li><li>Google Workspace</li></ul>
+            </div>
+            <div class="skill-group skill-group--soft reveal">
+              <h3>Soft Skills</h3>
+              <ul class="chips"><li>Communication</li><li>Teamwork</li><li>Problem Solving</li><li>Time Management</li><li>Adaptability</li><li>Attention to Detail</li><li>Willingness to Learn</li><li>Emotional Intelligence</li></ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= PROJECTS ================= -->
+      <section class="section" id="projects" aria-labelledby="projects-title">
+        <div class="container">
+          <header class="chapter reveal">
+            <span class="chapter__no" aria-hidden="true">04</span>
+            <div>
+              <p class="chapter__jp" lang="ja" aria-hidden="true">作品</p>
+              <h2 class="chapter__title" id="projects-title">Sample Works &amp; Projects</h2>
+            </div>
+          </header>
+
+          <div class="filters reveal" role="group" aria-label="Filter projects by type">
+            <button type="button" class="filter" data-filter="all" aria-pressed="true">All</button>
+            <button type="button" class="filter" data-filter="capstone" aria-pressed="false">Capstone</button>
+            <button type="button" class="filter" data-filter="web" aria-pressed="false">Web</button>
+            <button type="button" class="filter" data-filter="academic" aria-pressed="false">Academic</button>
+          </div>
+          <p class="visually-hidden" id="filter-status" role="status"></p>
+
+          <div class="projects">
+            <article class="project project--feature reveal" data-cat="capstone">
+              <button class="project__media" type="button" data-open="dlg-ebook">
+                <img src="/img/ebook-home.webp" width="1366" height="768" loading="lazy" alt="Student homepage of the eBook Library Management System" />
+                <span class="project__zoom" aria-hidden="true">View case file</span>
+                <span class="visually-hidden">Open the eBook Library Management System case file</span>
+              </button>
+              <div class="project__body">
+                <p class="project__meta"><span>Capstone</span> 2026 · Team of four</p>
+                <h3 class="project__title">eBook Library Management System</h3>
+                <p>A web-based eBook library for my former high school, <strong>Genecom Institute of Science and Technology</strong>, with a digital catalog, an in-browser PDF reader, bookmarks, highlights, and tools for the librarian.</p>
+                <p class="project__skills"><strong>Skills shown:</strong> requirements gathering, feature development, testing and debugging, teamwork</p>
+                <ul class="tags" aria-label="Technologies"><li>Laravel</li><li>MySQL</li><li>Tailwind CSS</li><li>Alpine.js</li><li>PHPUnit</li><li>Playwright</li></ul>
+                <div class="project__actions">
+                  <button type="button" class="btn btn--primary btn--sm" data-open="dlg-ebook">Open case file</button>
+                  <span class="badge">Private repository</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="project reveal" data-cat="web">
+              <button class="project__media" type="button" data-open="dlg-landing">
+                <img src="/img/landing-page.webp" width="1400" height="695" loading="lazy" alt="Landing page with the heading Building Modern, Responsive Websites That Stand Out" />
+                <span class="project__zoom" aria-hidden="true">View case file</span>
+                <span class="visually-hidden">Open the Landing Page case file</span>
+              </button>
+              <div class="project__body">
+                <p class="project__meta"><span>Web</span> The Odin Project · 2026</p>
+                <h3 class="project__title">Landing Page</h3>
+                <p>A personal landing page built with HTML and CSS Flexbox and published with GitHub Pages.</p>
+                <p class="project__skills"><strong>Skills shown:</strong> HTML, CSS Flexbox, page layout, Git and GitHub</p>
+                <div class="project__actions">
+                  <a class="btn btn--primary btn--sm" href="https://dustinclarence.github.io/landing-page/" target="_blank" rel="noopener">Live site<span class="visually-hidden"> (opens in a new tab)</span></a>
+                  <a class="btn btn--ghost btn--sm" href="https://github.com/dustinclarence/landing-page" target="_blank" rel="noopener">Code<span class="visually-hidden"> on GitHub (opens in a new tab)</span></a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project reveal" data-cat="web">
+              <button class="project__media" type="button" data-open="dlg-recipes">
+                <img src="/img/odin-recipes.webp" width="1400" height="695" loading="lazy" alt="Odin Recipes home page with three recipe cards" />
+                <span class="project__zoom" aria-hidden="true">View case file</span>
+                <span class="visually-hidden">Open the Odin Recipes case file</span>
+              </button>
+              <div class="project__body">
+                <p class="project__meta"><span>Web</span> The Odin Project · 2026</p>
+                <h3 class="project__title">Odin Recipes</h3>
+                <p>An HTML and CSS recipe site with a home page and three linked recipe pages, published on GitHub.</p>
+                <p class="project__skills"><strong>Skills shown:</strong> HTML structure, linking pages, organizing files, Git commits</p>
+                <div class="project__actions">
+                  <a class="btn btn--primary btn--sm" href="https://dustinclarence.github.io/odin-recipes/" target="_blank" rel="noopener">Live site<span class="visually-hidden"> (opens in a new tab)</span></a>
+                  <a class="btn btn--ghost btn--sm" href="https://github.com/dustinclarence/odin-recipes" target="_blank" rel="noopener">Code<span class="visually-hidden"> on GitHub (opens in a new tab)</span></a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project project--text reveal" data-cat="academic">
+              <div class="project__media project__media--art" aria-hidden="true">
+                <span class="art__jp" lang="ja">学校</span>
+                <span class="art__en">Java · SQL</span>
+              </div>
+              <div class="project__body">
+                <p class="project__meta"><span>Academic</span> STI College Legazpi · 2024</p>
+                <h3 class="project__title">School Management System</h3>
+                <p>Developed and successfully defended with my classmates using Java and SQL. I used programming and database skills to build, test, debug, and document the system.</p>
+                <p class="project__skills"><strong>Skills shown:</strong> Java, SQL, testing and debugging, documentation, teamwork</p>
+                <p class="project__note">No screenshots or source code were kept from this project.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= EXPERIENCE ================= -->
+      <section class="section section--tone" id="experience" aria-labelledby="experience-title">
+        <div class="container">
+          <header class="chapter reveal">
+            <span class="chapter__no" aria-hidden="true">05</span>
+            <div>
+              <p class="chapter__jp" lang="ja" aria-hidden="true">経験</p>
+              <h2 class="chapter__title" id="experience-title">Experience</h2>
+            </div>
+          </header>
+
+          <ol class="timeline">
+            <li class="timeline__item reveal">
+              <p class="timeline__date">2026</p>
+              <div class="panel">
+                <h3 class="panel__title">Capstone Team Member</h3>
+                <p class="panel__sub">eBook Library Management System · STI College Legazpi</p>
+                <ul class="ticks">
+                  <li>Took part in gathering requirements with Genecom Institute of Science and Technology</li>
+                  <li>Worked on the system: building features, testing them, and fixing errors</li>
+                  <li>Defended the system with my team in November 2026</li>
+                </ul>
+              </div>
+            </li>
+            <li class="timeline__item reveal">
+              <p class="timeline__date">Mar – Apr 2023</p>
+              <div class="panel">
+                <h3 class="panel__title">Work Immersion Trainee · Livestock Health Monitoring</h3>
+                <p class="panel__sub">City Veterinary Office · San Roque, Legazpi City</p>
+                <ul class="ticks">
+                  <li>Assisted in monitoring the health and condition of 50+ livestock</li>
+                  <li>Recorded and maintained accurate health information for over 100 animals</li>
+                  <li>Supported disease prevention and early detection under the supervision of veterinary staff</li>
+                  <li>Prepared reports and kept records organized and up to date</li>
+                </ul>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- ================= ACHIEVEMENTS ================= -->
+      <section class="section" id="achievements" aria-labelledby="achievements-title">
+        <div class="container">
+          <header class="chapter reveal">
+            <span class="chapter__no" aria-hidden="true">06</span>
+            <div>
+              <p class="chapter__jp" lang="ja" aria-hidden="true">学歴と実績</p>
+              <h2 class="chapter__title" id="achievements-title">Education &amp; Achievements</h2>
+            </div>
+          </header>
+
+          <div class="achievements">
+            <article class="panel panel--cert reveal">
+              <button class="cert__thumb" type="button" data-open="dlg-cert">
+                <img src="/img/oracle-java-certificate.webp" width="1210" height="935" loading="lazy" alt="Oracle Academy Award of Course Completion for Java Fundamentals, presented to Dustin Clarence Costo" />
+                <span class="visually-hidden">View the certificate larger</span>
+              </button>
+              <div>
+                <p class="eyebrow">Certificate</p>
+                <h3 class="panel__title">Java Fundamentals · Award of Course Completion</h3>
+                <p class="panel__sub">Oracle Academy · 19 June 2024</p>
+                <p>Completed the coursework of Oracle Academy's Java Fundamentals course.</p>
+              </div>
+            </article>
+            <article class="panel reveal">
+              <p class="eyebrow">Education</p>
+              <h3 class="panel__title">Bachelor of Science in Information Technology</h3>
+              <p class="panel__sub">STI College Legazpi · 2023 – 2027</p>
+              <p>Expected graduation: 2027. Coursework and projects in programming, databases, web development, and system development.</p>
+            </article>
+            <article class="panel reveal">
+              <p class="eyebrow">Milestone</p>
+              <h3 class="panel__title">Capstone defended</h3>
+              <p class="panel__sub">November 2026</p>
+              <p>Our team defended the eBook Library Management System that we built for Genecom Institute of Science and Technology.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= CONTACT ================= -->
+      <section class="section section--contact" id="contact" aria-labelledby="contact-title">
+        <div class="container">
+          <header class="chapter reveal">
+            <span class="chapter__no" aria-hidden="true">07</span>
+            <div>
+              <p class="chapter__jp" lang="ja" aria-hidden="true">連絡先</p>
+              <h2 class="chapter__title" id="contact-title">Contact</h2>
+            </div>
+          </header>
+
+          <p class="contact__lead reveal">I am open to internship and entry-level <strong>QA Tester</strong> opportunities. The best way to reach me is by email.</p>
+
+          <ul class="contact reveal">
+            <li class="contact__card contact__card--main">
+              <p class="eyebrow">Email</p>
+              <a class="contact__value" href="mailto:costo.dustinclarence.dcc@gmail.com">costo.dustinclarence.dcc@gmail.com</a>
+              <button class="btn btn--ghost btn--sm copy" type="button" data-copy="costo.dustinclarence.dcc@gmail.com">Copy email</button>
+            </li>
+            <li class="contact__card">
+              <p class="eyebrow">LinkedIn</p>
+              <a class="contact__value" href="https://www.linkedin.com/in/dustinclarencecosto" target="_blank" rel="noopener">linkedin.com/in/dustinclarencecosto<span class="visually-hidden"> (opens in a new tab)</span></a>
+            </li>
+            <li class="contact__card">
+              <p class="eyebrow">GitHub</p>
+              <a class="contact__value" href="https://github.com/dustinclarence" target="_blank" rel="noopener">github.com/dustinclarence<span class="visually-hidden"> (opens in a new tab)</span></a>
+            </li>
+            <li class="contact__card">
+              <p class="eyebrow">Location</p>
+              <p class="contact__value">Legazpi City, Albay, Philippines</p>
+            </li>
+          </ul>
+          <p class="visually-hidden" id="copy-status" role="status"></p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container site-footer__inner">
+        <p><span class="seal seal--xs" aria-hidden="true">DC</span> © 2026 Dustin Clarence Costo</p>
+        <p class="site-footer__note">Illustrations are original and drawn in code. Screenshots come from my own projects.</p>
+        <a href="#home">Back to top <span aria-hidden="true">↑</span></a>
+      </div>
+    </footer>
+
+    <!-- ================= CASE FILES ================= -->
+    <dialog class="dialog" id="dlg-ebook" aria-labelledby="dlg-ebook-title">
+      <div class="dialog__inner">
+        <button class="dialog__close" type="button" data-close><span aria-hidden="true">×</span><span class="visually-hidden">Close</span></button>
+        <p class="kicker"><span class="kicker__tag">CASE FILE</span> Capstone · 2026</p>
+        <h2 class="dialog__title" id="dlg-ebook-title">eBook Library Management System</h2>
+        <div class="gallery">
+          <figure class="gallery__main">
+            <img src="/img/ebook-home.webp" width="1366" height="768" alt="Student homepage with a featured book and a Continue Reading row" />
+            <figcaption>Student homepage</figcaption>
+          </figure>
+          <div class="gallery__thumbs" role="group" aria-label="Screenshots">
+            <button type="button" aria-pressed="true" data-cap="Student homepage" data-alt="Student homepage with a featured book and a Continue Reading row"><img src="/img/ebook-home.webp" alt="" width="1366" height="768" loading="lazy" /><span class="visually-hidden">Student homepage</span></button>
+            <button type="button" aria-pressed="false" data-cap="All eBooks catalog" data-alt="Catalog grid of eBooks with sorting and category filters"><img src="/img/ebook-catalog.webp" alt="" width="1366" height="768" loading="lazy" /><span class="visually-hidden">All eBooks catalog</span></button>
+            <button type="button" aria-pressed="false" data-cap="Browse by category" data-alt="All Categories page with category tiles"><img src="/img/ebook-categories.webp" alt="" width="1366" height="768" loading="lazy" /><span class="visually-hidden">Browse by category</span></button>
+            <button type="button" aria-pressed="false" data-cap="Book details" data-alt="Book details page with description, rating and actions"><img src="/img/ebook-details.webp" alt="" width="1366" height="768" loading="lazy" /><span class="visually-hidden">Book details</span></button>
+            <button type="button" aria-pressed="false" data-cap="PDF reader with highlights" data-alt="PDF reader page with highlighted passages"><img src="/img/ebook-reader.webp" alt="" width="1366" height="768" loading="lazy" /><span class="visually-hidden">PDF reader with highlights</span></button>
+            <button type="button" aria-pressed="false" data-cap="Librarian dashboard" data-alt="Librarian dashboard with book statistics and recently added books"><img src="/img/ebook-librarian.webp" alt="" width="1366" height="768" loading="lazy" /><span class="visually-hidden">Librarian dashboard</span></button>
+          </div>
+        </div>
+        <div class="dialog__cols">
+          <div>
+            <h3>Purpose</h3>
+            <p>Genecom Institute of Science and Technology needed a way for students to find and read eBooks online. The system gives students a catalog, a PDF reader with bookmarks and highlights, and gives the librarian tools to manage books and records.</p>
+            <h3>My contribution</h3>
+            <ul class="ticks">
+              <li>Took part in gathering the school's requirements</li>
+              <li>Built features, tested them, and fixed errors with my team</li>
+              <li>Helped prepare the system for our defense in November 2026</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Built with</h3>
+            <ul class="tags"><li>Laravel</li><li>MySQL</li><li>Tailwind CSS</li><li>Alpine.js</li></ul>
+            <h3>How it is tested</h3>
+            <p>Our team tests the system with automated PHPUnit tests and Playwright browser tests.</p>
+            <h3>Source code</h3>
+            <p>The repository is private because it is a school project. The screenshots show test accounts and sample books only.</p>
+          </div>
+        </div>
+      </div>
+    </dialog>
+
+    <dialog class="dialog" id="dlg-landing" aria-labelledby="dlg-landing-title">
+      <div class="dialog__inner">
+        <button class="dialog__close" type="button" data-close><span aria-hidden="true">×</span><span class="visually-hidden">Close</span></button>
+        <p class="kicker"><span class="kicker__tag">CASE FILE</span> The Odin Project · 2026</p>
+        <h2 class="dialog__title" id="dlg-landing-title">Landing Page</h2>
+        <figure class="gallery__main"><img src="/img/landing-page.webp" width="1400" height="695" alt="Landing page hero section with a call-to-action button" loading="lazy" /></figure>
+        <div class="dialog__cols">
+          <div>
+            <h3>What it is</h3>
+            <p>A personal landing page from The Odin Project Foundations course. I built the layout with HTML and CSS Flexbox and published it with GitHub Pages.</p>
+          </div>
+          <div>
+            <h3>Links</h3>
+            <p class="dialog__links"><a class="btn btn--primary btn--sm" href="https://dustinclarence.github.io/landing-page/" target="_blank" rel="noopener">Live site<span class="visually-hidden"> (opens in a new tab)</span></a> <a class="btn btn--ghost btn--sm" href="https://github.com/dustinclarence/landing-page" target="_blank" rel="noopener">Source code<span class="visually-hidden"> (opens in a new tab)</span></a></p>
+          </div>
+        </div>
+      </div>
+    </dialog>
+
+    <dialog class="dialog" id="dlg-recipes" aria-labelledby="dlg-recipes-title">
+      <div class="dialog__inner">
+        <button class="dialog__close" type="button" data-close><span aria-hidden="true">×</span><span class="visually-hidden">Close</span></button>
+        <p class="kicker"><span class="kicker__tag">CASE FILE</span> The Odin Project · 2026</p>
+        <h2 class="dialog__title" id="dlg-recipes-title">Odin Recipes</h2>
+        <figure class="gallery__main"><img src="/img/odin-recipes.webp" width="1400" height="695" alt="Odin Recipes home page with three recipe cards" loading="lazy" /></figure>
+        <div class="dialog__cols">
+          <div>
+            <h3>What it is</h3>
+            <p>My first project in The Odin Project: a recipe website with a home page and three linked recipe pages, made with HTML and CSS.</p>
+          </div>
+          <div>
+            <h3>Links</h3>
+            <p class="dialog__links"><a class="btn btn--primary btn--sm" href="https://dustinclarence.github.io/odin-recipes/" target="_blank" rel="noopener">Live site<span class="visually-hidden"> (opens in a new tab)</span></a> <a class="btn btn--ghost btn--sm" href="https://github.com/dustinclarence/odin-recipes" target="_blank" rel="noopener">Source code<span class="visually-hidden"> (opens in a new tab)</span></a></p>
+          </div>
+        </div>
+      </div>
+    </dialog>
+
+    <dialog class="dialog dialog--cert" id="dlg-cert" aria-labelledby="dlg-cert-title">
+      <div class="dialog__inner">
+        <button class="dialog__close" type="button" data-close><span aria-hidden="true">×</span><span class="visually-hidden">Close</span></button>
+        <h2 class="visually-hidden" id="dlg-cert-title">Oracle Academy Java Fundamentals certificate</h2>
+        <img src="/img/oracle-java-certificate.webp" width="1210" height="935" alt="Oracle Academy Award of Course Completion for Java Fundamentals, presented to Dustin Clarence Costo on 19 June 2024" loading="lazy" />
+      </div>
+    </dialog>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
