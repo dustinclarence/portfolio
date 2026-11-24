@@ -2171,7 +2171,7 @@ a.contact__value:hover {
 }
 
 /* =========================================================
-   AI Lab
+   Games & Apps lab
    ========================================================= */
 [data-group][hidden],
 .filter-empty[hidden] {
@@ -3406,4 +3406,8 @@ a.project__media {
 
 .path li:last-child span {
   color: var(--paper);
+}
+
+.ai-lab__cta {
+  margin: 0.3rem 0 0;
 }

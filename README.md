@@ -6,9 +6,9 @@ Personal portfolio of Dustin Clarence Costo, BS Information Technology student a
 
 ## Sections
 
-Home · About · Skills · Role Fit Report · Projects (including the AI Lab) · Experience · Academic Achievements · Reflection · Display Studio · Contact
+Home · About · Skills · Role Fit Report · Projects (including Games & Apps) · Experience · Academic Achievements · Reflection · Display Studio · Contact
 
-The **AI Lab** projects (AI Bug Triage, TestPal QA Chatbot, Neural Playground, Chess AI, Fleet Grid AI, Melody Machine) are labelled on the site as AI-assisted builds.
+The **Games & Apps** area links to twelve browser projects, including the nine-game [Arcade](https://dustinclarence.github.io/arcade/).
 
 The **Display Studio** has 12 working controls: brightness, sunset filter, accent ink, calm motion, reading ruler, high contrast, typeface, wind chime, ink trail, falling petals, manga mode and reset.
 

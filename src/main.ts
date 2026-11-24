@@ -144,7 +144,7 @@ filterButtons.forEach((btn) => {
         p.classList.add('is-in');
       }
     });
-    // Hide a whole group (main projects / AI Lab) when none of its cards match.
+    // Hide a whole group (main projects / Games & Apps) when none of its cards match.
     document.querySelectorAll<HTMLElement>('[data-group]').forEach((g) => {
       g.hidden = !g.querySelector('.project:not([hidden])');
     });

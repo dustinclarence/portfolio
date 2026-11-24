@@ -341,7 +341,7 @@
             <button type="button" class="filter" data-filter="capstone" aria-pressed="false">Capstone</button>
             <button type="button" class="filter" data-filter="web" aria-pressed="false">Web</button>
             <button type="button" class="filter" data-filter="academic" aria-pressed="false">Academic</button>
-            <button type="button" class="filter filter--ai" data-filter="ai" aria-pressed="false"><span aria-hidden="true">✦</span> AI Lab</button>
+            <button type="button" class="filter filter--ai" data-filter="lab" aria-pressed="false"><span aria-hidden="true">✦</span> Games &amp; Apps</button>
           </div>
           <p class="visually-hidden" id="filter-status" role="status"></p>
 
@@ -417,116 +417,213 @@
           </div>
           <div class="ai-lab" data-group>
             <header class="ai-lab__head reveal">
-              <p class="eyebrow">AI Lab · 2026</p>
-              <h3 class="ai-lab__title">Six browser projects about artificial intelligence</h3>
-              <p class="ai-lab__note"><strong>AI-assisted builds:</strong> these projects were made with an AI coding assistant (Claude) for this portfolio. Each one runs entirely in the browser, and its code and an explanation of the AI technique are on GitHub.</p>
+              <p class="eyebrow">Games &amp; Apps · 2026</p>
+              <h3 class="ai-lab__title">Twelve things you can play and use right now</h3>
+              <p class="ai-lab__note">Every project runs in the browser with no download. Each one explains how to use it on screen and works with a keyboard, mouse or touch screen. Built with the help of AI coding tools, and tested on desktop and phone.</p>
+              <p class="ai-lab__cta"><a class="btn btn--primary btn--sm" href="https://dustinclarence.github.io/arcade/" target="_blank" rel="noopener">Open the Arcade: 9 games ↗<span class="visually-hidden"> (opens in a new tab)</span></a></p>
             </header>
             <div class="projects projects--ai">
-            <article class="project project--ai reveal" data-cat="ai">
-              <a class="project__media" href="https://dustinclarence.github.io/ai-bug-triage/?demo=1" target="_blank" rel="noopener">
-                <img src="/img/proj-ai-bug-triage.webp" width="1200" height="675" loading="lazy" alt="Bug tracker with sample bugs, an AI suggestion panel and severity tags" />
-                <span class="project__zoom" aria-hidden="true">Open live demo ↗</span>
-                <span class="visually-hidden">Open the AI Bug Triage live demo (opens in a new tab)</span>
+            <article class="project project--lab reveal" data-cat="lab">
+              <a class="project__media" href="https://dustinclarence.github.io/arcade/neon-getaway/" target="_blank" rel="noopener">
+                <img src="/img/game-neon-getaway.webp" width="1200" height="675" loading="lazy" alt="Neon Getaway game with a pixel city, cash bag and minimap" />
+                <span class="project__zoom" aria-hidden="true">Play now ↗</span>
+                <span class="visually-hidden">Open Neon Getaway (opens in a new tab)</span>
               </a>
               <div class="project__body">
-                <p class="project__meta"><span>AI Lab</span> Machine learning</p>
-                <h3 class="project__title">AI Bug Triage</h3>
-                <p>A QA bug tracker where a Naive Bayes model suggests each bug's severity and category as you type, and explains which words drove the decision.</p>
-                <p class="project__skills"><strong>Skills demonstrated:</strong> Naive Bayes classifier, text processing, leave-one-out evaluation</p>
+                <p class="project__meta"><span>Game</span> Driving</p>
+                <h3 class="project__title">Neon Getaway</h3>
+                <p>A 16-bit style city chase. Drive around the neon city, grab the cash bags and escape the police before time runs out.</p>
+                <p class="project__skills"><strong>Skills demonstrated:</strong> Car physics, police pathfinding (breadth-first search), minimap, keyboard and touch controls</p>
                 <div class="project__actions">
-                  <a class="btn btn--primary btn--sm" href="https://dustinclarence.github.io/ai-bug-triage/?demo=1" target="_blank" rel="noopener">Live demo<span class="visually-hidden"> of AI Bug Triage (opens in a new tab)</span></a>
-                  <a class="btn btn--ghost btn--sm" href="https://github.com/dustinclarence/ai-bug-triage" target="_blank" rel="noopener">Code<span class="visually-hidden"> of AI Bug Triage on GitHub (opens in a new tab)</span></a>
-                  <span class="badge badge--ai">AI-assisted build</span>
+                  <a class="btn btn--primary btn--sm" href="https://dustinclarence.github.io/arcade/neon-getaway/" target="_blank" rel="noopener">Play<span class="visually-hidden"> Neon Getaway (opens in a new tab)</span></a>
+                  <a class="btn btn--ghost btn--sm" href="https://github.com/dustinclarence/arcade" target="_blank" rel="noopener">Code<span class="visually-hidden"> of Neon Getaway on GitHub (opens in a new tab)</span></a>
                 </div>
               </div>
             </article>
-            <article class="project project--ai reveal" data-cat="ai">
+            <article class="project project--lab reveal" data-cat="lab">
+              <a class="project__media" href="https://dustinclarence.github.io/arcade/dama/" target="_blank" rel="noopener">
+                <img src="/img/game-dama.webp" width="1200" height="675" loading="lazy" alt="Dama checkers board with red and white pieces" />
+                <span class="project__zoom" aria-hidden="true">Play now ↗</span>
+                <span class="visually-hidden">Open Dama (opens in a new tab)</span>
+              </a>
+              <div class="project__body">
+                <p class="project__meta"><span>Game</span> Board</p>
+                <h3 class="project__title">Dama</h3>
+                <p>Classic checkers with forced captures, multi-jumps and kings. Play against the computer or a friend.</p>
+                <p class="project__skills"><strong>Skills demonstrated:</strong> Game rules logic, computer opponent (minimax), undo, accessible board</p>
+                <div class="project__actions">
+                  <a class="btn btn--primary btn--sm" href="https://dustinclarence.github.io/arcade/dama/" target="_blank" rel="noopener">Play<span class="visually-hidden"> Dama (opens in a new tab)</span></a>
+                  <a class="btn btn--ghost btn--sm" href="https://github.com/dustinclarence/arcade" target="_blank" rel="noopener">Code<span class="visually-hidden"> of Dama on GitHub (opens in a new tab)</span></a>
+                </div>
+              </div>
+            </article>
+            <article class="project project--lab reveal" data-cat="lab">
+              <a class="project__media" href="https://dustinclarence.github.io/arcade/four-in-a-row/" target="_blank" rel="noopener">
+                <img src="/img/game-four-in-a-row.webp" width="1200" height="675" loading="lazy" alt="Four in a Row board" />
+                <span class="project__zoom" aria-hidden="true">Play now ↗</span>
+                <span class="visually-hidden">Open Four in a Row (opens in a new tab)</span>
+              </a>
+              <div class="project__body">
+                <p class="project__meta"><span>Game</span> Board</p>
+                <h3 class="project__title">Four in a Row</h3>
+                <p>Drop discs and connect four before your opponent. The computer looks several moves ahead.</p>
+                <p class="project__skills"><strong>Skills demonstrated:</strong> Minimax with alpha-beta pruning, win detection, animations</p>
+                <div class="project__actions">
+                  <a class="btn btn--primary btn--sm" href="https://dustinclarence.github.io/arcade/four-in-a-row/" target="_blank" rel="noopener">Play<span class="visually-hidden"> Four in a Row (opens in a new tab)</span></a>
+                  <a class="btn btn--ghost btn--sm" href="https://github.com/dustinclarence/arcade" target="_blank" rel="noopener">Code<span class="visually-hidden"> of Four in a Row on GitHub (opens in a new tab)</span></a>
+                </div>
+              </div>
+            </article>
+            <article class="project project--lab reveal" data-cat="lab">
+              <a class="project__media" href="https://dustinclarence.github.io/arcade/xox/" target="_blank" rel="noopener">
+                <img src="/img/game-xox.webp" width="1200" height="675" loading="lazy" alt="XOX tic-tac-toe board" />
+                <span class="project__zoom" aria-hidden="true">Play now ↗</span>
+                <span class="visually-hidden">Open XOX (opens in a new tab)</span>
+              </a>
+              <div class="project__body">
+                <p class="project__meta"><span>Game</span> Board</p>
+                <h3 class="project__title">XOX</h3>
+                <p>Tic-tac-toe with an unbeatable computer, an easy mode and a 2-player mode.</p>
+                <p class="project__skills"><strong>Skills demonstrated:</strong> Game-tree search, scorekeeping, keyboard shortcuts</p>
+                <div class="project__actions">
+                  <a class="btn btn--primary btn--sm" href="https://dustinclarence.github.io/arcade/xox/" target="_blank" rel="noopener">Play<span class="visually-hidden"> XOX (opens in a new tab)</span></a>
+                  <a class="btn btn--ghost btn--sm" href="https://github.com/dustinclarence/arcade" target="_blank" rel="noopener">Code<span class="visually-hidden"> of XOX on GitHub (opens in a new tab)</span></a>
+                </div>
+              </div>
+            </article>
+            <article class="project project--lab reveal" data-cat="lab">
+              <a class="project__media" href="https://dustinclarence.github.io/arcade/marble-spiral/" target="_blank" rel="noopener">
+                <img src="/img/game-marble-spiral.webp" width="1200" height="675" loading="lazy" alt="Marble Spiral game with a spiral track" />
+                <span class="project__zoom" aria-hidden="true">Play now ↗</span>
+                <span class="visually-hidden">Open Marble Spiral (opens in a new tab)</span>
+              </a>
+              <div class="project__body">
+                <p class="project__meta"><span>Game</span> Arcade</p>
+                <h3 class="project__title">Marble Spiral</h3>
+                <p>Shoot marbles into a chain rolling toward the centre. Match three of the same colour to pop them.</p>
+                <p class="project__skills"><strong>Skills demonstrated:</strong> Path geometry, collision detection, matching and chain reactions</p>
+                <div class="project__actions">
+                  <a class="btn btn--primary btn--sm" href="https://dustinclarence.github.io/arcade/marble-spiral/" target="_blank" rel="noopener">Play<span class="visually-hidden"> Marble Spiral (opens in a new tab)</span></a>
+                  <a class="btn btn--ghost btn--sm" href="https://github.com/dustinclarence/arcade" target="_blank" rel="noopener">Code<span class="visually-hidden"> of Marble Spiral on GitHub (opens in a new tab)</span></a>
+                </div>
+              </div>
+            </article>
+            <article class="project project--lab reveal" data-cat="lab">
+              <a class="project__media" href="https://dustinclarence.github.io/arcade/sky-stack/" target="_blank" rel="noopener">
+                <img src="/img/game-sky-stack.webp" width="1200" height="675" loading="lazy" alt="Sky Stack tower game" />
+                <span class="project__zoom" aria-hidden="true">Play now ↗</span>
+                <span class="visually-hidden">Open Sky Stack (opens in a new tab)</span>
+              </a>
+              <div class="project__body">
+                <p class="project__meta"><span>Game</span> One button</p>
+                <h3 class="project__title">Sky Stack</h3>
+                <p>Drop swinging floors from a crane to build the tallest tower you can.</p>
+                <p class="project__skills"><strong>Skills demonstrated:</strong> Canvas animation, pendulum motion, scoring and lives</p>
+                <div class="project__actions">
+                  <a class="btn btn--primary btn--sm" href="https://dustinclarence.github.io/arcade/sky-stack/" target="_blank" rel="noopener">Play<span class="visually-hidden"> Sky Stack (opens in a new tab)</span></a>
+                  <a class="btn btn--ghost btn--sm" href="https://github.com/dustinclarence/arcade" target="_blank" rel="noopener">Code<span class="visually-hidden"> of Sky Stack on GitHub (opens in a new tab)</span></a>
+                </div>
+              </div>
+            </article>
+            <article class="project project--lab reveal" data-cat="lab">
+              <a class="project__media" href="https://dustinclarence.github.io/arcade/paper-plane/" target="_blank" rel="noopener">
+                <img src="/img/game-paper-plane.webp" width="1200" height="675" loading="lazy" alt="Paper Plane Dash start screen" />
+                <span class="project__zoom" aria-hidden="true">Play now ↗</span>
+                <span class="visually-hidden">Open Paper Plane Dash (opens in a new tab)</span>
+              </a>
+              <div class="project__body">
+                <p class="project__meta"><span>Game</span> One button</p>
+                <h3 class="project__title">Paper Plane Dash</h3>
+                <p>Tap to keep a paper plane in the air and fly through the gaps between the pillars.</p>
+                <p class="project__skills"><strong>Skills demonstrated:</strong> Gravity physics, collision detection, best-score saving</p>
+                <div class="project__actions">
+                  <a class="btn btn--primary btn--sm" href="https://dustinclarence.github.io/arcade/paper-plane/" target="_blank" rel="noopener">Play<span class="visually-hidden"> Paper Plane Dash (opens in a new tab)</span></a>
+                  <a class="btn btn--ghost btn--sm" href="https://github.com/dustinclarence/arcade" target="_blank" rel="noopener">Code<span class="visually-hidden"> of Paper Plane Dash on GitHub (opens in a new tab)</span></a>
+                </div>
+              </div>
+            </article>
+            <article class="project project--lab reveal" data-cat="lab">
+              <a class="project__media" href="https://dustinclarence.github.io/arcade/snake/" target="_blank" rel="noopener">
+                <img src="/img/game-snake.webp" width="1200" height="675" loading="lazy" alt="Pixel Snake start screen" />
+                <span class="project__zoom" aria-hidden="true">Play now ↗</span>
+                <span class="visually-hidden">Open Pixel Snake (opens in a new tab)</span>
+              </a>
+              <div class="project__body">
+                <p class="project__meta"><span>Game</span> Classic</p>
+                <h3 class="project__title">Pixel Snake</h3>
+                <p>Eat the fruit, grow longer and avoid your own tail. Works with keys, swipe or on-screen buttons.</p>
+                <p class="project__skills"><strong>Skills demonstrated:</strong> Game loop, input queue, swipe gestures</p>
+                <div class="project__actions">
+                  <a class="btn btn--primary btn--sm" href="https://dustinclarence.github.io/arcade/snake/" target="_blank" rel="noopener">Play<span class="visually-hidden"> Pixel Snake (opens in a new tab)</span></a>
+                  <a class="btn btn--ghost btn--sm" href="https://github.com/dustinclarence/arcade" target="_blank" rel="noopener">Code<span class="visually-hidden"> of Pixel Snake on GitHub (opens in a new tab)</span></a>
+                </div>
+              </div>
+            </article>
+            <article class="project project--lab reveal" data-cat="lab">
+              <a class="project__media" href="https://dustinclarence.github.io/arcade/number-merge/" target="_blank" rel="noopener">
+                <img src="/img/game-number-merge.webp" width="1200" height="675" loading="lazy" alt="Number Merge puzzle grid" />
+                <span class="project__zoom" aria-hidden="true">Play now ↗</span>
+                <span class="visually-hidden">Open Number Merge (opens in a new tab)</span>
+              </a>
+              <div class="project__body">
+                <p class="project__meta"><span>Game</span> Puzzle</p>
+                <h3 class="project__title">Number Merge</h3>
+                <p>Slide and merge matching tiles to reach 2048, with undo for when a move goes wrong.</p>
+                <p class="project__skills"><strong>Skills demonstrated:</strong> Grid algorithms, undo history, swipe controls</p>
+                <div class="project__actions">
+                  <a class="btn btn--primary btn--sm" href="https://dustinclarence.github.io/arcade/number-merge/" target="_blank" rel="noopener">Play<span class="visually-hidden"> Number Merge (opens in a new tab)</span></a>
+                  <a class="btn btn--ghost btn--sm" href="https://github.com/dustinclarence/arcade" target="_blank" rel="noopener">Code<span class="visually-hidden"> of Number Merge on GitHub (opens in a new tab)</span></a>
+                </div>
+              </div>
+            </article>
+            <article class="project project--lab reveal" data-cat="lab">
               <a class="project__media" href="https://dustinclarence.github.io/qa-chatbot/?q=What%20is%20regression%20testing" target="_blank" rel="noopener">
-                <img src="/img/proj-qa-chatbot.webp" width="1200" height="675" loading="lazy" alt="Chat window answering a question about writing a bug report" />
-                <span class="project__zoom" aria-hidden="true">Open live demo ↗</span>
-                <span class="visually-hidden">Open the TestPal QA Chatbot live demo (opens in a new tab)</span>
+                <img src="/img/proj-qa-chatbot.webp" width="1200" height="675" loading="lazy" alt="Chat window answering a question about bug reports" />
+                <span class="project__zoom" aria-hidden="true">Play now ↗</span>
+                <span class="visually-hidden">Open TestPal QA Chatbot (opens in a new tab)</span>
               </a>
               <div class="project__body">
-                <p class="project__meta"><span>AI Lab</span> Chatbot · NLP</p>
+                <p class="project__meta"><span>App</span> Chatbot</p>
                 <h3 class="project__title">TestPal QA Chatbot</h3>
-                <p>A chatbot that answers software testing questions. It ranks its knowledge base with TF-IDF and cosine similarity, shows its confidence, and admits when it is not sure.</p>
-                <p class="project__skills"><strong>Skills demonstrated:</strong> TF-IDF, cosine similarity, intent matching</p>
+                <p>A chatbot that answers software testing questions, shows how sure it is, and says when it does not know.</p>
+                <p class="project__skills"><strong>Skills demonstrated:</strong> Text search (TF-IDF and cosine similarity), chat interface, QA knowledge</p>
                 <div class="project__actions">
-                  <a class="btn btn--primary btn--sm" href="https://dustinclarence.github.io/qa-chatbot/?q=What%20is%20regression%20testing" target="_blank" rel="noopener">Live demo<span class="visually-hidden"> of TestPal QA Chatbot (opens in a new tab)</span></a>
+                  <a class="btn btn--primary btn--sm" href="https://dustinclarence.github.io/qa-chatbot/?q=What%20is%20regression%20testing" target="_blank" rel="noopener">Open app<span class="visually-hidden"> TestPal QA Chatbot (opens in a new tab)</span></a>
                   <a class="btn btn--ghost btn--sm" href="https://github.com/dustinclarence/qa-chatbot" target="_blank" rel="noopener">Code<span class="visually-hidden"> of TestPal QA Chatbot on GitHub (opens in a new tab)</span></a>
-                  <span class="badge badge--ai">AI-assisted build</span>
                 </div>
               </div>
             </article>
-            <article class="project project--ai reveal" data-cat="ai">
-              <a class="project__media" href="https://dustinclarence.github.io/neural-playground/?train=1" target="_blank" rel="noopener">
-                <img src="/img/proj-neural-playground.webp" width="1200" height="675" loading="lazy" alt="Neural network separating orange and blue points with a curved boundary" />
-                <span class="project__zoom" aria-hidden="true">Open live demo ↗</span>
-                <span class="visually-hidden">Open the Neural Playground live demo (opens in a new tab)</span>
-              </a>
-              <div class="project__body">
-                <p class="project__meta"><span>AI Lab</span> Neural network</p>
-                <h3 class="project__title">Neural Playground</h3>
-                <p>A neural network written from scratch. Pick a dataset, press Train, and watch the decision boundary, weights and loss change live.</p>
-                <p class="project__skills"><strong>Skills demonstrated:</strong> Backpropagation, gradient descent, tanh and sigmoid activations</p>
-                <div class="project__actions">
-                  <a class="btn btn--primary btn--sm" href="https://dustinclarence.github.io/neural-playground/?train=1" target="_blank" rel="noopener">Live demo<span class="visually-hidden"> of Neural Playground (opens in a new tab)</span></a>
-                  <a class="btn btn--ghost btn--sm" href="https://github.com/dustinclarence/neural-playground" target="_blank" rel="noopener">Code<span class="visually-hidden"> of Neural Playground on GitHub (opens in a new tab)</span></a>
-                  <span class="badge badge--ai">AI-assisted build</span>
-                </div>
-              </div>
-            </article>
-            <article class="project project--ai reveal" data-cat="ai">
+            <article class="project project--lab reveal" data-cat="lab">
               <a class="project__media" href="https://dustinclarence.github.io/chess-ai/" target="_blank" rel="noopener">
-                <img src="/img/proj-chess-ai.webp" width="1200" height="675" loading="lazy" alt="Chess board with an AI insight panel" />
-                <span class="project__zoom" aria-hidden="true">Open live demo ↗</span>
-                <span class="visually-hidden">Open the Chess AI live demo (opens in a new tab)</span>
+                <img src="/img/proj-chess-ai.webp" width="1200" height="675" loading="lazy" alt="Chess board with an insight panel" />
+                <span class="project__zoom" aria-hidden="true">Play now ↗</span>
+                <span class="visually-hidden">Open Chess (opens in a new tab)</span>
               </a>
               <div class="project__body">
-                <p class="project__meta"><span>AI Lab</span> Game AI · search</p>
-                <h3 class="project__title">Chess AI</h3>
-                <p>Full chess with castling, en passant and promotion, against an engine that thinks up to four moves ahead.</p>
-                <p class="project__skills"><strong>Skills demonstrated:</strong> Minimax with alpha-beta pruning, evaluation functions</p>
+                <p class="project__meta"><span>Game</span> Board</p>
+                <h3 class="project__title">Chess</h3>
+                <p>Full chess with castling, en passant and promotion against a computer that thinks up to four moves ahead.</p>
+                <p class="project__skills"><strong>Skills demonstrated:</strong> Move generation checked with perft tests, minimax with alpha-beta pruning</p>
                 <div class="project__actions">
-                  <a class="btn btn--primary btn--sm" href="https://dustinclarence.github.io/chess-ai/" target="_blank" rel="noopener">Live demo<span class="visually-hidden"> of Chess AI (opens in a new tab)</span></a>
-                  <a class="btn btn--ghost btn--sm" href="https://github.com/dustinclarence/chess-ai" target="_blank" rel="noopener">Code<span class="visually-hidden"> of Chess AI on GitHub (opens in a new tab)</span></a>
-                  <span class="badge badge--ai">AI-assisted build</span>
+                  <a class="btn btn--primary btn--sm" href="https://dustinclarence.github.io/chess-ai/" target="_blank" rel="noopener">Play<span class="visually-hidden"> Chess (opens in a new tab)</span></a>
+                  <a class="btn btn--ghost btn--sm" href="https://github.com/dustinclarence/chess-ai" target="_blank" rel="noopener">Code<span class="visually-hidden"> of Chess on GitHub (opens in a new tab)</span></a>
                 </div>
               </div>
             </article>
-            <article class="project project--ai reveal" data-cat="ai">
+            <article class="project project--lab reveal" data-cat="lab">
               <a class="project__media" href="https://dustinclarence.github.io/fleet-grid-ai/" target="_blank" rel="noopener">
-                <img src="/img/proj-fleet-grid-ai.webp" width="1200" height="675" loading="lazy" alt="Two naval grids with the player fleet shown" />
-                <span class="project__zoom" aria-hidden="true">Open live demo ↗</span>
-                <span class="visually-hidden">Open the Fleet Grid AI live demo (opens in a new tab)</span>
+                <img src="/img/proj-fleet-grid-ai.webp" width="1200" height="675" loading="lazy" alt="Two naval grids" />
+                <span class="project__zoom" aria-hidden="true">Play now ↗</span>
+                <span class="visually-hidden">Open Fleet Grid (opens in a new tab)</span>
               </a>
               <div class="project__body">
-                <p class="project__meta"><span>AI Lab</span> Game AI · probability</p>
-                <h3 class="project__title">Fleet Grid AI</h3>
-                <p>An original naval grid game. The strongest opponent aims with a probability heatmap you can switch on and watch.</p>
-                <p class="project__skills"><strong>Skills demonstrated:</strong> Probabilistic search, constraint filtering</p>
+                <p class="project__meta"><span>Game</span> Strategy</p>
+                <h3 class="project__title">Fleet Grid</h3>
+                <p>An original naval grid game. The computer aims with a probability heatmap you can switch on and watch.</p>
+                <p class="project__skills"><strong>Skills demonstrated:</strong> Probability-based search, game design, keyboard play</p>
                 <div class="project__actions">
-                  <a class="btn btn--primary btn--sm" href="https://dustinclarence.github.io/fleet-grid-ai/" target="_blank" rel="noopener">Live demo<span class="visually-hidden"> of Fleet Grid AI (opens in a new tab)</span></a>
-                  <a class="btn btn--ghost btn--sm" href="https://github.com/dustinclarence/fleet-grid-ai" target="_blank" rel="noopener">Code<span class="visually-hidden"> of Fleet Grid AI on GitHub (opens in a new tab)</span></a>
-                  <span class="badge badge--ai">AI-assisted build</span>
-                </div>
-              </div>
-            </article>
-            <article class="project project--ai reveal" data-cat="ai">
-              <a class="project__media" href="https://dustinclarence.github.io/melody-machine/" target="_blank" rel="noopener">
-                <img src="/img/proj-melody-machine.webp" width="1200" height="675" loading="lazy" alt="Rhythm game screen with four lanes and composer settings" />
-                <span class="project__zoom" aria-hidden="true">Open live demo ↗</span>
-                <span class="visually-hidden">Open the Melody Machine live demo (opens in a new tab)</span>
-              </a>
-              <div class="project__body">
-                <p class="project__meta"><span>AI Lab</span> Music AI · game</p>
-                <h3 class="project__title">Melody Machine</h3>
-                <p>A rhythm game where a Markov-chain AI composes a new melody every round. Hit the notes in time to play its song.</p>
-                <p class="project__skills"><strong>Skills demonstrated:</strong> Markov chains, temperature sampling, Web Audio synthesis</p>
-                <div class="project__actions">
-                  <a class="btn btn--primary btn--sm" href="https://dustinclarence.github.io/melody-machine/" target="_blank" rel="noopener">Live demo<span class="visually-hidden"> of Melody Machine (opens in a new tab)</span></a>
-                  <a class="btn btn--ghost btn--sm" href="https://github.com/dustinclarence/melody-machine" target="_blank" rel="noopener">Code<span class="visually-hidden"> of Melody Machine on GitHub (opens in a new tab)</span></a>
-                  <span class="badge badge--ai">AI-assisted build</span>
+                  <a class="btn btn--primary btn--sm" href="https://dustinclarence.github.io/fleet-grid-ai/" target="_blank" rel="noopener">Play<span class="visually-hidden"> Fleet Grid (opens in a new tab)</span></a>
+                  <a class="btn btn--ghost btn--sm" href="https://github.com/dustinclarence/fleet-grid-ai" target="_blank" rel="noopener">Code<span class="visually-hidden"> of Fleet Grid on GitHub (opens in a new tab)</span></a>
                 </div>
               </div>
             </article>
