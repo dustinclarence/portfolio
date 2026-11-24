@@ -64,3 +64,31 @@ document.addEventListener('pointerdown', (e) => {
   ink.addEventListener('animationend', () => ink.remove());
   window.setTimeout(() => ink.remove(), 900);
 });
+
+/* ---------- Role Fit Report: run the checks one by one ---------- */
+const report = document.querySelector<HTMLElement>('.report');
+const rows = [...document.querySelectorAll<HTMLElement>('.tc')];
+let running = false;
+function runReport(): void {
+  if (running || calm()) return;
+  running = true;
+  rows.forEach((r) => r.classList.add('is-pending'));
+  rows.forEach((r, i) => {
+    window.setTimeout(() => {
+      r.classList.remove('is-pending');
+      r.classList.add('is-done');
+      window.setTimeout(() => r.classList.remove('is-done'), 700);
+      if (i === rows.length - 1) running = false;
+    }, 350 + i * 180);
+  });
+}
+document.getElementById('run-report')?.addEventListener('click', runReport);
+if (report && 'IntersectionObserver' in window) {
+  const io = new IntersectionObserver((entries) => {
+    if (entries.some((e) => e.isIntersecting)) {
+      io.disconnect();
+      runReport();
+    }
+  }, { threshold: 0.25 });
+  io.observe(report);
+}

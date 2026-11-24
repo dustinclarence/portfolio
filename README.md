@@ -6,7 +6,7 @@ Personal portfolio of Dustin Clarence Costo, BS Information Technology student a
 
 ## Sections
 
-Home · About · Skills · Projects (including the AI Lab) · Experience · Education & Achievements · Display Studio · Contact
+Home · About · Skills · Role Fit Report · Projects (including the AI Lab) · Experience · Academic Achievements · Reflection · Display Studio · Contact
 
 The **AI Lab** projects (AI Bug Triage, TestPal QA Chatbot, Neural Playground, Chess AI, Fleet Grid AI, Melody Machine) are labelled on the site as AI-assisted builds.
 

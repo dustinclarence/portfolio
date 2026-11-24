@@ -49,7 +49,7 @@ document.addEventListener('keydown', (e) => {
     navToggle.focus();
   }
 });
-window.matchMedia('(min-width: 900px)').addEventListener('change', (e) => {
+window.matchMedia('(min-width: 1200px)').addEventListener('change', (e) => {
   if (e.matches) setNav(false);
 });
 
