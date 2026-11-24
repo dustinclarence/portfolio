@@ -1,5 +1,4 @@
 import './styles.css';
-import './studio';
 import './fx';
 
 const root = document.documentElement;

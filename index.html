@@ -46,10 +46,6 @@
           <li><a href="#contact">Contact</a></li>
         </ul>
         <div class="nav__tools">
-          <button class="settings-toggle" type="button" data-open="dlg-display" aria-haspopup="dialog">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h10M18 7h2M4 17h4M12 17h8"/><circle cx="16" cy="7" r="2"/><circle cx="10" cy="17" r="2"/></svg>
-            <span class="visually-hidden">Display settings</span>
-          </button>
           <button class="theme-toggle" type="button" aria-pressed="false">
             <span class="tt" aria-hidden="true">
               <span class="tt__stars"><i></i><i></i><i></i><i></i></span>
@@ -780,7 +776,6 @@
       </section>
     </main>
 
-    <div class="fx-ruler" aria-hidden="true"></div>
 
 
 
@@ -797,37 +792,6 @@
     </footer>
 
     <!-- ================= CASE FILES ================= -->
-    <dialog class="dialog dialog--settings" id="dlg-display" aria-labelledby="dlg-display-title">
-      <div class="dialog__inner">
-        <button class="dialog__close" type="button" data-close><span aria-hidden="true">×</span><span class="visually-hidden">Close</span></button>
-        <h2 class="dialog__title" id="dlg-display-title">Display settings</h2>
-        <p class="settings__lead">Optional reading settings. Your choices are saved on this device.</p>
-        <ul class="settings">
-          <li class="setting">
-            <div><h3 class="setting__name" id="t-contrast">High contrast</h3><p class="setting__desc">Darker text, stronger borders and underlined links.</p></div>
-            <button class="switchy" type="button" aria-pressed="false" data-toggle="contrast" aria-labelledby="t-contrast"><span class="switchy__knob"></span></button>
-          </li>
-          <li class="setting">
-            <div><h3 class="setting__name" id="t-calm">Calm motion</h3><p class="setting__desc">Turn off animations and smooth scrolling.</p></div>
-            <button class="switchy" type="button" aria-pressed="false" data-toggle="calm" aria-labelledby="t-calm"><span class="switchy__knob"></span></button>
-          </li>
-          <li class="setting">
-            <div><h3 class="setting__name" id="t-ruler">Reading ruler</h3><p class="setting__desc">A soft band follows your mouse pointer to help you keep your place.</p></div>
-            <button class="switchy" type="button" aria-pressed="false" data-toggle="ruler" aria-labelledby="t-ruler"><span class="switchy__knob"></span></button>
-          </li>
-          <li class="setting">
-            <div><h3 class="setting__name" id="t-font">Typeface</h3><p class="setting__desc">Serif headings or a sans-serif font throughout.</p></div>
-            <div class="seg" role="group" aria-labelledby="t-font">
-              <button type="button" data-font="serif" aria-pressed="true" class="seg__serif">Classic</button>
-              <button type="button" data-font="sans" aria-pressed="false">Modern</button>
-            </div>
-          </li>
-        </ul>
-        <p class="settings__foot"><button class="btn btn--ghost btn--sm" type="button" id="studio-reset">Reset settings</button></p>
-        <p class="visually-hidden" id="studio-status" role="status"></p>
-      </div>
-    </dialog>
-
     <dialog class="dialog" id="dlg-ebook" aria-labelledby="dlg-ebook-title">
       <div class="dialog__inner">
         <button class="dialog__close" type="button" data-close><span aria-hidden="true">×</span><span class="visually-hidden">Close</span></button>

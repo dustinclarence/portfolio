@@ -10,8 +10,6 @@ Home · About · Skills · Projects (including Games & Apps) · QA Skills Snapsh
 
 The **Games & Apps** area links to twelve browser projects, including the nine-game [Arcade](https://dustinclarence.github.io/arcade/).
 
-A **Display settings** button in the header opens four optional reading settings: high contrast, calm motion, reading ruler and typeface.
-
 ## Built with
 
 - Vite + vanilla TypeScript, HTML and CSS (no UI framework)

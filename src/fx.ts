@@ -1,13 +1,12 @@
 // Small interaction polish: pointer spotlight, gentle 3D tilt and ink ripples.
-// Everything is skipped for touch input, reduced-motion users and Calm motion mode.
+// Everything is skipped for touch input and reduced-motion users.
 
-const root = document.documentElement;
 const reduce = window.matchMedia('(prefers-reduced-motion: reduce)');
 const finePointer = window.matchMedia('(hover: hover) and (pointer: fine)');
-const calm = () => reduce.matches || root.classList.contains('s-calm');
+const calm = () => reduce.matches;
 
 /* ---------- Spotlight: cards glow softly where the pointer is ---------- */
-const GLOW = '.tile, .project, .panel, .skill-group, .contact__card';
+const GLOW = '.project, .panel, .skill-group, .contact__card';
 document.addEventListener(
   'pointermove',
   (e) => {
@@ -21,8 +20,8 @@ document.addEventListener(
   { passive: true },
 );
 
-/* ---------- Tilt: project cards and studio tiles lean toward the pointer ---------- */
-const TILT = '.project, .tile';
+/* ---------- Tilt: project cards lean toward the pointer ---------- */
+const TILT = '.project';
 let tilted: HTMLElement | null = null;
 document.addEventListener(
   'pointermove',
@@ -35,7 +34,7 @@ document.addEventListener(
     const r = card.getBoundingClientRect();
     const px = (e.clientX - r.left) / r.width - 0.5;
     const py = (e.clientY - r.top) / r.height - 0.5;
-    const max = card.classList.contains('tile') ? 6 : 3;
+    const max = 3;
     card.style.transform = `perspective(900px) rotateX(${(-py * max).toFixed(2)}deg) rotateY(${(px * max).toFixed(2)}deg) translateY(-3px)`;
   },
   { passive: true },
@@ -47,7 +46,7 @@ document.addEventListener('pointerleave', () => tilted && resetTilt(tilted));
 document.addEventListener('scroll', () => tilted && resetTilt(tilted), { passive: true });
 
 /* ---------- Ripple: an ink drop spreads from where you click ---------- */
-const RIPPLE = '.btn, .switchy, .filter, .seg button, .theme-toggle, .nav__links a';
+const RIPPLE = '.btn, .filter, .theme-toggle, .nav__links a';
 document.addEventListener('pointerdown', (e) => {
   if (calm()) return;
   const el = (e.target as Element).closest<HTMLElement>(RIPPLE);
