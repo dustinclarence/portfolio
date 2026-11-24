@@ -1,5 +1,6 @@
 import './styles.css';
 import './fx';
+import './previews';
 
 const root = document.documentElement;
 const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
