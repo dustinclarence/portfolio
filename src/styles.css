@@ -3432,3 +3432,8 @@ a.project__media {
 #fit {
   border-top: 1px solid var(--line);
 }
+
+/* Education card fills the row when it is the only card under the certificate */
+.achievements > .panel:last-child:nth-child(2) {
+  grid-column: 1 / -1;
+}
