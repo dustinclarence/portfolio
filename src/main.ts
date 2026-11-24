@@ -1,4 +1,5 @@
 import './styles.css';
+import './studio';
 
 const root = document.documentElement;
 const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
@@ -21,6 +22,11 @@ function applyTheme(theme: 'day' | 'night', save: boolean): void {
 }
 applyTheme(root.dataset.theme === 'night' ? 'night' : 'day', false);
 themeBtn?.addEventListener('click', () => {
+  // Briefly animate colours across the whole page while the theme changes.
+  if (!reduceMotion.matches) {
+    root.classList.add('theme-anim');
+    window.setTimeout(() => root.classList.remove('theme-anim'), 650);
+  }
   applyTheme(root.dataset.theme === 'night' ? 'day' : 'night', true);
 });
 
@@ -65,12 +71,18 @@ document.querySelectorAll('main > section[id]').forEach((s) => sectionObserver.o
 
 /* ---------- Scroll progress ---------- */
 const bar = document.querySelector<HTMLElement>('.progress span');
+const ring = document.querySelector<SVGCircleElement>('.to-top__fill');
+const toTop = document.querySelector<HTMLElement>('.to-top');
+const RING_LEN = 2 * Math.PI * 21;
+if (ring) ring.style.strokeDasharray = String(RING_LEN);
 let ticking = false;
 function updateProgress(): void {
   const max = root.scrollHeight - window.innerHeight;
   const ratio = max > 0 ? window.scrollY / max : 0;
   if (bar) bar.style.transform = `scaleX(${Math.min(1, Math.max(0, ratio))})`;
   root.classList.toggle('is-scrolled', window.scrollY > 8);
+  if (ring) ring.style.strokeDashoffset = String(RING_LEN * (1 - Math.min(1, Math.max(0, ratio))));
+  toTop?.classList.toggle('is-visible', window.scrollY > window.innerHeight * 0.8);
   ticking = false;
 }
 window.addEventListener(
@@ -131,6 +143,12 @@ filterButtons.forEach((btn) => {
         p.classList.add('is-in');
       }
     });
+    // Hide a whole group (main projects / AI Lab) when none of its cards match.
+    document.querySelectorAll<HTMLElement>('[data-group]').forEach((g) => {
+      g.hidden = !g.querySelector('.project:not([hidden])');
+    });
+    const empty = document.getElementById('filter-empty');
+    if (empty) empty.hidden = shown > 0;
     if (filterStatus) filterStatus.textContent = `Showing ${shown} ${shown === 1 ? 'project' : 'projects'}`;
   });
 });
