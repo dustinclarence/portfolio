@@ -8,7 +8,7 @@ Personal portfolio of Dustin Clarence Costo, BS Information Technology student a
 
 Home · About · Skills · Projects (including Games & Apps) · QA Skills Snapshot · Experience · Academic Achievements · Reflection · Contact
 
-The **Games & Apps** area links to twelve browser projects, including the nine-game [Arcade](https://dustinclarence.github.io/arcade/).
+The **Games & Apps** area links to thirteen browser projects, including the ten-game [Arcade](https://dustinclarence.github.io/arcade/).
 
 ## Built with
 
