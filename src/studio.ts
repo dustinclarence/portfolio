@@ -1,35 +1,28 @@
-// Display Studio: 16 working controls that restyle the page. Settings persist per device.
+// Display Studio: 12 working controls that restyle the page. Settings persist per device.
 
-type Size = 's' | 'm' | 'l';
 type Ink = 'shu' | 'ai' | 'hisui' | 'murasaki';
 interface Studio {
   bright: number;
   warm: boolean;
-  size: Size;
   ink: Ink;
   calm: boolean;
   ruler: boolean;
   contrast: boolean;
-  tone: boolean;
   font: 'serif' | 'sans';
-  space: boolean;
   trail: boolean;
   petals: boolean;
   manga: boolean;
 }
 
-const KEY = 'studio-v1';
+const KEY = 'studio-v2';
 const DEFAULTS: Studio = {
   bright: 100,
   warm: false,
-  size: 'm',
   ink: 'shu',
   calm: false,
   ruler: false,
   contrast: false,
-  tone: true,
   font: 'serif',
-  space: false,
   trail: false,
   petals: false,
   manga: false,
@@ -48,6 +41,11 @@ function load(): Studio {
   }
 }
 let st = load();
+try {
+  localStorage.removeItem('studio-v1');
+} catch {
+  /* ignore */
+}
 function save(): void {
   try {
     localStorage.setItem(KEY, JSON.stringify(st));
@@ -66,12 +64,8 @@ function apply(): void {
   root.classList.toggle('s-calm', st.calm);
   root.classList.toggle('s-ruler', st.ruler);
   root.classList.toggle('s-contrast', st.contrast);
-  root.classList.toggle('s-notone', !st.tone);
   root.classList.toggle('s-sans', st.font === 'sans');
-  root.classList.toggle('s-space', st.space);
   root.classList.toggle('s-manga', st.manga);
-  root.classList.remove('s-size-s', 's-size-l');
-  if (st.size !== 'm') root.classList.add('s-size-' + st.size);
   if (st.ink === 'shu') delete root.dataset.ink;
   else root.dataset.ink = st.ink;
   if (dim) dim.style.opacity = String(((100 - st.bright) / 100) * 1.15);
@@ -83,7 +77,6 @@ function apply(): void {
     if (k in st) b.setAttribute('aria-pressed', String(st[k]));
     b.closest('.tile')?.classList.toggle('is-on', b.getAttribute('aria-pressed') === 'true');
   });
-  document.querySelectorAll<HTMLButtonElement>('.seg [data-size]').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.size === st.size)));
   document.querySelectorAll<HTMLButtonElement>('.swatches [data-ink]').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.ink === st.ink)));
   document.querySelectorAll<HTMLButtonElement>('.seg [data-font]').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.font === st.font)));
   const range = $<HTMLInputElement>('#s-bright');
@@ -250,8 +243,6 @@ const NAMES: Record<string, string> = {
   calm: 'Calm motion',
   ruler: 'Reading ruler',
   contrast: 'High contrast',
-  tone: 'Screentone',
-  space: 'Breathing room',
   chime: 'Wind chime',
   trail: 'Ink trail',
   petals: 'Falling petals',
@@ -277,14 +268,6 @@ document.querySelectorAll<HTMLButtonElement>('.switchy[data-toggle]').forEach((b
   });
 });
 
-document.querySelectorAll<HTMLButtonElement>('.seg [data-size]').forEach((b) =>
-  b.addEventListener('click', () => {
-    st.size = b.dataset.size as Size;
-    save();
-    apply();
-    announce(`Text size ${{ s: 'small', m: 'medium', l: 'large' }[st.size]}`);
-  }),
-);
 document.querySelectorAll<HTMLButtonElement>('.swatches [data-ink]').forEach((b) =>
   b.addEventListener('click', () => {
     st.ink = b.dataset.ink as Ink;
@@ -306,18 +289,6 @@ $<HTMLInputElement>('#s-bright')?.addEventListener('input', (e) => {
   save();
   apply();
 });
-
-// The studio's sky switch drives the same theme as the header switch.
-const headerTheme = $<HTMLButtonElement>('.nav .theme-toggle');
-const studioTheme = $<HTMLButtonElement>('.studio-theme');
-studioTheme?.addEventListener('click', () => headerTheme?.click());
-const syncTheme = () => {
-  const night = root.dataset.theme === 'night';
-  studioTheme?.setAttribute('aria-pressed', String(night));
-  studioTheme?.closest('.tile')?.classList.toggle('is-on', night);
-};
-new MutationObserver(syncTheme).observe(root, { attributes: true, attributeFilter: ['data-theme'] });
-syncTheme();
 
 $<HTMLButtonElement>('#studio-reset')?.addEventListener('click', () => {
   st = { ...DEFAULTS };

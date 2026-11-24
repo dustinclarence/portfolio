@@ -67,12 +67,8 @@
       <section class="home" id="home" aria-labelledby="hero-title">
       <div class="hero">
         <div class="hero__art" aria-hidden="true">
-          <svg class="mayon" viewBox="0 0 1440 560" preserveAspectRatio="xMidYMax slice" focusable="false">
+          <svg class="mayon" viewBox="0 0 1440 400" preserveAspectRatio="xMidYMax meet" focusable="false">
             <defs>
-              <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="0" class="sky-a" />
-                <stop offset=".75" class="sky-b" />
-              </linearGradient>
               <linearGradient id="cone" x1="0" y1="0" x2="1" y2="0">
                 <stop offset="0" class="cone-a" />
                 <stop offset=".56" class="cone-b" />
@@ -82,16 +78,18 @@
                 <circle cx="4" cy="4" r="1.15" class="tone-dot" />
               </pattern>
             </defs>
-                        <circle class="sun" cx="1235" cy="235" r="66" />
-            <g class="streaks">
-              <path d="M1250 300 h150 M1290 322 h110" />
+            <g transform="translate(0 -160)">
+              <circle class="sun" cx="1235" cy="238" r="64" />
+              <g class="streaks">
+                <path d="M1250 300 h150 M1290 322 h110" />
+              </g>
+              <!-- ridges run far past the edges so very wide screens are filled -->
+              <path class="ridge-far" d="M-1600 440 C -1000 400 -400 430 0 452 C 160 410 300 430 430 418 S 650 392 760 402 S 1010 428 1170 412 S 1360 398 1440 406 C 1900 380 2500 430 3040 410 V560 H-1600Z" />
+              <path class="cone" d="M470 500 C 620 452 752 322 846 210 Q 872 186 898 210 C 992 322 1124 452 1274 500 Z" fill="url(#cone)" />
+              <path class="cone-tone" d="M872 196 Q 886 200 898 210 C 992 322 1124 452 1274 500 L 1040 500 C 980 400 924 300 872 196Z" fill="url(#tone)" />
+              <path class="gullies" d="M866 206 C 852 280 830 352 796 440 M878 206 C 890 290 912 372 952 470 M872 210 C 872 300 874 380 880 480" />
+              <path class="ridge-near" d="M-1600 495 C -900 470 -300 500 0 500 C 180 470 320 488 480 480 S 820 504 1000 494 S 1300 476 1440 490 C 2000 470 2600 505 3040 488 V560 H-1600Z" />
             </g>
-            <path class="ridge-far" d="M0 452 C 160 410 300 430 430 418 S 650 392 760 402 S 1010 428 1170 412 S 1360 398 1440 406 V560 H0Z" />
-            <path class="cone" d="M470 500 C 620 452 752 322 846 210 Q 872 186 898 210 C 992 322 1124 452 1274 500 Z" fill="url(#cone)" />
-            <path class="cone-tone" d="M872 196 Q 886 200 898 210 C 992 322 1124 452 1274 500 L 1040 500 C 980 400 924 300 872 196Z" fill="url(#tone)" />
-            <path class="gullies" d="M866 206 C 852 280 830 352 796 440 M878 206 C 890 290 912 372 952 470 M872 210 C 872 300 874 380 880 480" />
-            <path class="plume" d="M874 190 C 896 162 872 138 906 116 C 938 96 924 70 960 56 C 990 44 990 26 1020 18" />
-            <path class="ridge-near" d="M0 500 C 180 470 320 488 480 480 S 820 504 1000 494 S 1300 476 1440 490 V560 H0Z" />
           </svg>
         </div>
 
@@ -115,12 +113,7 @@
               <img src="/img/dustin.webp" width="720" height="720" alt="Portrait of Dustin Clarence Costo in formal attire" fetchpriority="high" />
               <span class="frame__tone" aria-hidden="true"></span>
             </div>
-            <span class="vertical-label" lang="ja" aria-hidden="true">品質保証</span>
             <span class="seal seal--lg" aria-hidden="true">DC</span>
-            <figcaption class="frame__caption">
-              <span class="frame__caption-jp" lang="ja">品質保証</span>
-              <span>Hinshitsu hoshō: “quality assurance”</span>
-            </figcaption>
           </figure>
         </div>
       </div>
@@ -128,7 +121,7 @@
         <div class="intro container">
           <div class="intro__label reveal">
             <p class="eyebrow">Introduction</p>
-            <p class="intro__jp" lang="ja" aria-hidden="true">はじめに</p>
+            <p class="intro__sub">In my own words</p>
           </div>
           <p class="intro__text reveal">Hello, I'm Dustin, a BS Information Technology student at STI College Legazpi, expecting to graduate in 2027. I am preparing for a career as a QA Tester. I like finding out why something does not work, and I pay attention to the small details that make software reliable. In our capstone, an eBook Library Management System for Genecom Institute of Science and Technology, I spent long days building features, testing them, and fixing errors with my team until we defended it in November 2026. Outside class, I study web development through The Odin Project, where I built and published my first websites. This portfolio shows my projects, skills, and experience. I am open to internship and entry-level QA opportunities where I can keep learning and contribute carefully.</p>
         </div>
@@ -140,7 +133,7 @@
           <header class="chapter reveal">
             <span class="chapter__no" aria-hidden="true">02</span>
             <div>
-              <p class="chapter__jp" lang="ja" aria-hidden="true">自己紹介</p>
+              <p class="chapter__kicker" aria-hidden="true">Who I am</p>
               <h2 class="chapter__title" id="about-title">About Me</h2>
             </div>
           </header>
@@ -185,7 +178,7 @@
           <header class="chapter reveal">
             <span class="chapter__no" aria-hidden="true">03</span>
             <div>
-              <p class="chapter__jp" lang="ja" aria-hidden="true">技能</p>
+              <p class="chapter__kicker" aria-hidden="true">What I can do</p>
               <h2 class="chapter__title" id="skills-title">Skills &amp; Competencies</h2>
             </div>
           </header>
@@ -225,7 +218,7 @@
           <header class="chapter reveal">
             <span class="chapter__no" aria-hidden="true">04</span>
             <div>
-              <p class="chapter__jp" lang="ja" aria-hidden="true">作品</p>
+              <p class="chapter__kicker" aria-hidden="true">What I have built</p>
               <h2 class="chapter__title" id="projects-title">Sample Works &amp; Projects</h2>
             </div>
           </header>
@@ -297,7 +290,7 @@
 
             <article class="project project--text reveal" data-cat="academic">
               <div class="project__media project__media--art" aria-hidden="true">
-                <span class="art__jp" lang="ja">学校</span>
+                <span class="art__jp">SMS</span>
                 <span class="art__en">Java · SQL</span>
               </div>
               <div class="project__body">
@@ -436,7 +429,7 @@
           <header class="chapter reveal">
             <span class="chapter__no" aria-hidden="true">05</span>
             <div>
-              <p class="chapter__jp" lang="ja" aria-hidden="true">経験</p>
+              <p class="chapter__kicker" aria-hidden="true">Where I have worked</p>
               <h2 class="chapter__title" id="experience-title">Experience</h2>
             </div>
           </header>
@@ -477,7 +470,7 @@
           <header class="chapter reveal">
             <span class="chapter__no" aria-hidden="true">06</span>
             <div>
-              <p class="chapter__jp" lang="ja" aria-hidden="true">学歴と実績</p>
+              <p class="chapter__kicker" aria-hidden="true">What I have earned</p>
               <h2 class="chapter__title" id="achievements-title">Education &amp; Achievements</h2>
             </div>
           </header>
@@ -517,35 +510,18 @@
           <header class="chapter reveal">
             <span class="chapter__no" aria-hidden="true">07</span>
             <div>
-              <p class="chapter__jp" lang="ja" aria-hidden="true">表示工房</p>
+              <p class="chapter__kicker" aria-hidden="true">Make it yours</p>
               <h2 class="chapter__title" id="studio-title">Display Studio</h2>
             </div>
           </header>
           <p class="studio__lead reveal">Make this page your own. Every control below really changes the site, and your choices are remembered on this device.</p>
 
           <ul class="studio" aria-label="Display controls">
-            <!-- 1 Sky switch -->
-            <li class="tile reveal" data-tile="theme">
-              <div class="tile__top">
-                <span class="tile__icon" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M24 8a16 16 0 0 0 0 32z" class="fill"/><circle cx="24" cy="24" r="16"/><path d="M24 2v3M24 43v3M2 24h3M43 24h3"/></svg></span>
-                <span class="tile__num" aria-hidden="true">01</span>
-              </div>
-              <h3 class="tile__name" id="t-theme">Sky switch</h3>
-              <p class="tile__desc">Day or night theme, with Mayon under the sun or the moon.</p>
-              <button class="theme-toggle theme-toggle--big studio-theme" type="button" aria-pressed="false" aria-labelledby="t-theme">
-                <span class="tt" aria-hidden="true">
-                  <span class="tt__stars"><i></i><i></i><i></i><i></i></span>
-                  <svg class="tt__peak" viewBox="0 0 40 16" preserveAspectRatio="none"><path d="M0 16 C 8 14 14 9 19 3 Q 20 1.6 21 3 C 26 9 32 14 40 16 Z"/></svg>
-                  <span class="tt__orb"></span>
-                </span>
-              </button>
-            </li>
-
             <!-- 2 Lantern brightness -->
             <li class="tile reveal" data-tile="bright">
               <div class="tile__top">
                 <span class="tile__icon tile__icon--lantern" aria-hidden="true"><svg viewBox="0 0 48 48"><circle cx="24" cy="25" r="17" class="glow"/><path d="M18 9h12M18 41h12M24 4v5"/><ellipse cx="24" cy="25" rx="11" ry="15" class="paper"/><path d="M13.5 19h21M13 25h22M13.5 31h21"/></svg></span>
-                <span class="tile__num" aria-hidden="true">02</span>
+                <span class="tile__num" aria-hidden="true">01</span>
               </div>
               <h3 class="tile__name"><label for="s-bright">Lantern brightness</label></h3>
               <p class="tile__desc">Dim the whole page for late-night reading.</p>
@@ -556,33 +532,18 @@
             <li class="tile reveal" data-tile="warm">
               <div class="tile__top">
                 <span class="tile__icon" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M12 30a12 12 0 0 1 24 0" class="fill"/><path d="M6 30h36M10 36h28M16 42h16M24 8v6M10 16l4 4M38 16l-4 4"/></svg></span>
-                <span class="tile__num" aria-hidden="true">03</span>
+                <span class="tile__num" aria-hidden="true">02</span>
               </div>
               <h3 class="tile__name" id="t-warm">Sunset filter</h3>
               <p class="tile__desc">A warm, amber light that is easier on tired eyes.</p>
               <button class="switchy" type="button" aria-pressed="false" data-toggle="warm" aria-labelledby="t-warm"><span class="switchy__knob"></span></button>
             </li>
 
-            <!-- 4 Text size -->
-            <li class="tile reveal" data-tile="size">
-              <div class="tile__top">
-                <span class="tile__icon" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M6 38 15 14l9 24M9.5 30h11"/><path d="M28 38l6-15 6 15M30.2 33h7.6"/></svg></span>
-                <span class="tile__num" aria-hidden="true">04</span>
-              </div>
-              <h3 class="tile__name" id="t-size">Text size</h3>
-              <p class="tile__desc">Make every word larger or smaller.</p>
-              <div class="seg" role="group" aria-labelledby="t-size">
-                <button type="button" data-size="s" aria-pressed="false"><span style="font-size:.8em">A</span><span class="visually-hidden"> small</span></button>
-                <button type="button" data-size="m" aria-pressed="true"><span>A</span><span class="visually-hidden"> medium</span></button>
-                <button type="button" data-size="l" aria-pressed="false"><span style="font-size:1.25em">A</span><span class="visually-hidden"> large</span></button>
-              </div>
-            </li>
-
             <!-- 5 Ink colour -->
             <li class="tile reveal" data-tile="ink">
               <div class="tile__top">
                 <span class="tile__icon" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M33 6 20 26l4 4L42 15z"/><path d="M20 26c-5 0-8 4-8 8 0 3-2 5-6 6 8 2 18 0 18-10" class="fill"/></svg></span>
-                <span class="tile__num" aria-hidden="true">05</span>
+                <span class="tile__num" aria-hidden="true">03</span>
               </div>
               <h3 class="tile__name" id="t-ink">Accent ink</h3>
               <p class="tile__desc">Re-ink the highlights in a traditional colour.</p>
@@ -598,7 +559,7 @@
             <li class="tile reveal" data-tile="calm">
               <div class="tile__top">
                 <span class="tile__icon tile__icon--wave" aria-hidden="true"><svg viewBox="0 0 48 48"><path class="wave" d="M4 18c5-6 9-6 14 0s9 6 14 0 9-6 12 0M4 30c5-6 9-6 14 0s9 6 14 0 9-6 12 0"/></svg></span>
-                <span class="tile__num" aria-hidden="true">06</span>
+                <span class="tile__num" aria-hidden="true">04</span>
               </div>
               <h3 class="tile__name" id="t-calm">Calm motion</h3>
               <p class="tile__desc">Turn off animations and smooth scrolling.</p>
@@ -609,7 +570,7 @@
             <li class="tile reveal" data-tile="ruler">
               <div class="tile__top">
                 <span class="tile__icon" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M8 10h32M8 38h32"/><rect x="4" y="19" width="40" height="10" rx="3" class="fill"/><path d="M10 24h20"/></svg></span>
-                <span class="tile__num" aria-hidden="true">07</span>
+                <span class="tile__num" aria-hidden="true">05</span>
               </div>
               <h3 class="tile__name" id="t-ruler">Reading ruler</h3>
               <p class="tile__desc">A soft band follows your pointer to keep your place.</p>
@@ -620,57 +581,35 @@
             <li class="tile reveal" data-tile="contrast">
               <div class="tile__top">
                 <span class="tile__icon" aria-hidden="true"><svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="17"/><path d="M24 7a17 17 0 0 1 0 34z" class="fill"/></svg></span>
-                <span class="tile__num" aria-hidden="true">08</span>
+                <span class="tile__num" aria-hidden="true">06</span>
               </div>
               <h3 class="tile__name" id="t-contrast">High contrast</h3>
               <p class="tile__desc">Darker text, stronger borders, underlined links.</p>
               <button class="switchy" type="button" aria-pressed="false" data-toggle="contrast" aria-labelledby="t-contrast"><span class="switchy__knob"></span></button>
             </li>
 
-            <!-- 9 Screentone -->
-            <li class="tile reveal" data-tile="tone">
-              <div class="tile__top">
-                <span class="tile__icon tile__icon--dots" aria-hidden="true"><svg viewBox="0 0 48 48"><rect x="6" y="6" width="36" height="36" rx="5"/><g class="fill"><circle cx="15" cy="15" r="2.2"/><circle cx="24" cy="15" r="2.2"/><circle cx="33" cy="15" r="2.2"/><circle cx="15" cy="24" r="2.2"/><circle cx="24" cy="24" r="2.2"/><circle cx="33" cy="24" r="2.2"/><circle cx="15" cy="33" r="2.2"/><circle cx="24" cy="33" r="2.2"/><circle cx="33" cy="33" r="2.2"/></g></svg></span>
-                <span class="tile__num" aria-hidden="true">09</span>
-              </div>
-              <h3 class="tile__name" id="t-tone">Screentone</h3>
-              <p class="tile__desc">Show or hide the manga-style dot texture.</p>
-              <button class="switchy" type="button" aria-pressed="true" data-toggle="tone" aria-labelledby="t-tone"><span class="switchy__knob"></span></button>
-            </li>
-
             <!-- 10 Typeface -->
             <li class="tile reveal" data-tile="font">
               <div class="tile__top">
                 <span class="tile__icon tile__icon--type" aria-hidden="true"><span class="type-serif">Aa</span><span class="type-sans">Aa</span></span>
-                <span class="tile__num" aria-hidden="true">10</span>
+                <span class="tile__num" aria-hidden="true">07</span>
               </div>
               <h3 class="tile__name" id="t-font">Typeface</h3>
-              <p class="tile__desc">Elegant Mincho headings or clean modern sans.</p>
+              <p class="tile__desc">Elegant serif headings or clean modern sans-serif.</p>
               <div class="seg seg--wide" role="group" aria-labelledby="t-font">
-                <button type="button" data-font="serif" aria-pressed="true" class="seg__serif">Mincho</button>
-                <button type="button" data-font="sans" aria-pressed="false">Sans</button>
+                <button type="button" data-font="serif" aria-pressed="true" class="seg__serif">Classic</button>
+                <button type="button" data-font="sans" aria-pressed="false">Modern</button>
               </div>
-            </li>
-
-            <!-- 11 Line spacing -->
-            <li class="tile reveal" data-tile="space">
-              <div class="tile__top">
-                <span class="tile__icon" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M18 12h24M18 24h24M18 36h24M8 8v32M4 12l4-4 4 4M4 36l4 4 4-4"/></svg></span>
-                <span class="tile__num" aria-hidden="true">11</span>
-              </div>
-              <h3 class="tile__name" id="t-space">Breathing room</h3>
-              <p class="tile__desc">More space between lines and letters.</p>
-              <button class="switchy" type="button" aria-pressed="false" data-toggle="space" aria-labelledby="t-space"><span class="switchy__knob"></span></button>
             </li>
 
             <!-- 12 Wind chime -->
             <li class="tile reveal" data-tile="chime">
               <div class="tile__top">
                 <span class="tile__icon tile__icon--chime" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M24 3v5"/><g class="bell"><path d="M14 22a10 10 0 0 1 20 0v2H14z" class="fill"/><path d="M24 24v6"/><path d="M20 30h8v12l-4 3-4-3z"/></g></svg></span>
-                <span class="tile__num" aria-hidden="true">12</span>
+                <span class="tile__num" aria-hidden="true">08</span>
               </div>
               <h3 class="tile__name" id="t-chime">Wind chime</h3>
-              <p class="tile__desc">Gentle fūrin chimes play now and then (sound on).</p>
+              <p class="tile__desc">Soft wind-chime notes ring now and then (sound on).</p>
               <button class="switchy" type="button" aria-pressed="false" data-toggle="chime" aria-labelledby="t-chime"><span class="switchy__knob"></span></button>
             </li>
 
@@ -678,7 +617,7 @@
             <li class="tile reveal" data-tile="trail">
               <div class="tile__top">
                 <span class="tile__icon" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M6 36c8-2 10-14 18-16s10 10 18 6" class="stroke-path"/><circle cx="42" cy="26" r="3" class="fill"/></svg></span>
-                <span class="tile__num" aria-hidden="true">13</span>
+                <span class="tile__num" aria-hidden="true">09</span>
               </div>
               <h3 class="tile__name" id="t-trail">Ink trail</h3>
               <p class="tile__desc">Your pointer leaves a fading brush stroke.</p>
@@ -689,7 +628,7 @@
             <li class="tile reveal" data-tile="petals">
               <div class="tile__top">
                 <span class="tile__icon tile__icon--petal" aria-hidden="true"><svg viewBox="0 0 48 48"><g class="flower"><path d="M24 24c-6-6-6-14 0-18 6 4 6 12 0 18zM24 24c8-3 15 0 16 7-6 3-13 1-16-7zM24 24c3 8 0 15-7 16-3-6-1-13 7-16zM24 24c-3 8 0 15 7 16 3-6 1-13-7-16zM24 24c-8-3-15 0-16 7 6 3 13 1 16-7z" class="fill"/></g></svg></span>
-                <span class="tile__num" aria-hidden="true">14</span>
+                <span class="tile__num" aria-hidden="true">10</span>
               </div>
               <h3 class="tile__name" id="t-petals">Falling petals</h3>
               <p class="tile__desc">A few cherry-blossom petals drift down the page.</p>
@@ -700,18 +639,18 @@
             <li class="tile reveal" data-tile="manga">
               <div class="tile__top">
                 <span class="tile__icon" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M8 10h32v20H22l-8 8v-8H8z"/><path d="M24 15v7M24 25.5v.5"/></svg></span>
-                <span class="tile__num" aria-hidden="true">15</span>
+                <span class="tile__num" aria-hidden="true">11</span>
               </div>
               <h3 class="tile__name" id="t-manga">Manga mode</h3>
               <p class="tile__desc">Turn the pictures black and white, like a printed manga page.</p>
               <button class="switchy" type="button" aria-pressed="false" data-toggle="manga" aria-labelledby="t-manga"><span class="switchy__knob"></span></button>
             </li>
 
-            <!-- 16 Reset -->
+            <!-- 12 Reset -->
             <li class="tile tile--reset reveal" data-tile="reset">
               <div class="tile__top">
                 <span class="tile__icon tile__icon--reset" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M38 24a14 14 0 1 1-4.1-9.9"/><path d="M36 6v9h-9"/></svg></span>
-                <span class="tile__num" aria-hidden="true">16</span>
+                <span class="tile__num" aria-hidden="true">12</span>
               </div>
               <h3 class="tile__name">Start fresh</h3>
               <p class="tile__desc">Put every setting back to how the page began.</p>
@@ -728,7 +667,7 @@
           <header class="chapter reveal">
             <span class="chapter__no" aria-hidden="true">08</span>
             <div>
-              <p class="chapter__jp" lang="ja" aria-hidden="true">連絡先</p>
+              <p class="chapter__kicker" aria-hidden="true">Let's talk</p>
               <h2 class="chapter__title" id="contact-title">Contact</h2>
             </div>
           </header>
@@ -769,7 +708,7 @@
     <footer class="site-footer">
     <a class="to-top" href="#home" aria-label="Back to top">
         <svg class="to-top__ring" viewBox="0 0 48 48" aria-hidden="true"><circle class="to-top__track" cx="24" cy="24" r="21"/><circle class="to-top__fill" cx="24" cy="24" r="21"/></svg>
-        <span class="to-top__seal" aria-hidden="true">上</span>
+        <span class="to-top__seal" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 19V5M5 12l7-7 7 7"/></svg></span>
       </a>
       <div class="container site-footer__inner">
         <p><span class="seal seal--xs" aria-hidden="true">DC</span> © 2026 Dustin Clarence Costo</p>

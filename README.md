@@ -10,7 +10,7 @@ Home · About · Skills · Projects (including the AI Lab) · Experience · Educ
 
 The **AI Lab** projects (AI Bug Triage, TestPal QA Chatbot, Neural Playground, Chess AI, Fleet Grid AI, Melody Machine) are labelled on the site as AI-assisted builds.
 
-The **Display Studio** has 16 working controls: theme, brightness, sunset filter, text size, accent ink, calm motion, reading ruler, high contrast, screentone, typeface, line spacing, wind chime, ink trail, falling petals, manga mode and reset.
+The **Display Studio** has 12 working controls: brightness, sunset filter, accent ink, calm motion, reading ruler, high contrast, typeface, wind chime, ink trail, falling petals, manga mode and reset.
 
 ## Built with
 
