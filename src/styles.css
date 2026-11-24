@@ -3411,3 +3411,24 @@ a.project__media {
 .ai-lab__cta {
   margin: 0.3rem 0 0;
 }
+
+/* Display settings: 9 controls in a 3 x 3 grid */
+.studio {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+@media (max-width: 900px) {
+  .studio {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .studio {
+    grid-template-columns: 1fr;
+  }
+}
+
+#fit {
+  border-top: 1px solid var(--line);
+}
